@@ -43,6 +43,9 @@ img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
 .menu a { color: var(--muted); background-image: linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-position: 0 100%; background-size: 0% 2px; transition: color .2s ease, background-size .25s ease; }
 .menu a:hover { color: #6A1E1E; background-size: 100% 2px; }
 .nav-toggle { display: none; background: transparent; border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 6px; }
+.lang-switch { display: flex; gap: 8px; }
+.lang-btn { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; cursor: pointer; transition: all .2s ease; }
+.lang-btn.active, .lang-btn:hover { color: var(--bg); background: var(--accent); border-color: var(--accent); }
 
 .site-header:not(.scrolled) { background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0)); }
 .site-header:not(.scrolled) .menu a { color: #ffffff; opacity: .92; }

@@ -20,13 +20,17 @@
         </a>
         <nav aria-label="Primary">
           <ul class="menu" id="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#booking" data-i18n="nav.booking">Booking</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="#location" data-i18n="nav.location">Location</a></li>
           </ul>
         </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" data-lang="is" aria-pressed="false">IS</button>
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        </div>
         <button class="nav-toggle" id="navToggle" aria-controls="menu" aria-expanded="false">Menu</button>
       </div>
     </header>
@@ -39,15 +43,15 @@
           <img src="logo.png" alt="Hoarrski Tattoo" class="hero-logo-img" />
         </div>
         <div class="hero-content container">
-          <a class="btn btn-primary" href="#booking">Book now</a>
-          <a class="btn btn-ghost" href="#portfolio">View work</a>
+          <a class="btn btn-primary" href="#booking" data-i18n="cta.book">Book now</a>
+          <a class="btn btn-ghost" href="#portfolio" data-i18n="cta.view">View work</a>
         </div>
       </section>
 
       <!-- Values/Process -->
       <section id="values" class="section compact">
         <div class="container">
-          <h2 class="section-title gothic">Þjónusta, gildi og ferlið</h2>
+          <h2 class="section-title gothic" data-i18n="values.title">Þjónusta, gildi og ferlið</h2>
           <div class="cards">
             <div class="card reveal">
               <h3 class="card-title">Sérhönnun</h3>
@@ -72,22 +76,22 @@
               <div class="process-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.51l-8 5-8-5V6h16Zm0 2.74V18H4V8.74l8 5 8-5Z"/></svg>
               </div>
-              <div class="process-title"><span>Skref 1 —</span> Samráð</div>
-              <p class="process-desc">Við ræðum hugmynd, stærð og staðsetningu.</p>
+              <div class="process-title" data-i18n="process.step1_title"><span>Skref 1 —</span> Samráð</div>
+              <p class="process-desc" data-i18n="process.step1_desc">Við ræðum hugmynd, stærð og staðsetningu.</p>
             </div>
             <div class="process-card reveal">
               <div class="process-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25Zm18-11.5a1 1 0 0 0 0-1.41L19.66 1a1 1 0 0 0-1.41 0L16 3.25l3.75 3.75L21 5.75Z"/></svg>
               </div>
-              <div class="process-title"><span>Skref 2 —</span> Hönnun</div>
-              <p class="process-desc">Sjónræn útfærsla og aðlögun að líkamsformi.</p>
+              <div class="process-title" data-i18n="process.step2_title"><span>Skref 2 —</span> Hönnun</div>
+              <p class="process-desc" data-i18n="process.step2_desc">Sjónræn útfærsla og aðlögun að líkamsformi.</p>
             </div>
             <div class="process-card reveal">
               <div class="process-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
               </div>
-              <div class="process-title"><span>Skref 3 —</span> Tattú</div>
-              <p class="process-desc">Vinna á stúdíói með hreinlæti og fagmennsku.</p>
+              <div class="process-title" data-i18n="process.step3_title"><span>Skref 3 —</span> Tattú</div>
+              <p class="process-desc" data-i18n="process.step3_desc">Vinna á stúdíói með hreinlæti og fagmennsku.</p>
             </div>
           </div>
         </div>
@@ -96,27 +100,27 @@
       <!-- About -->
       <section id="about" class="section">
         <div class="container">
-          <h2 class="section-title gothic">About Hoarrski</h2>
+          <h2 class="section-title gothic" data-i18n="about.title">About Hoarrski</h2>
           <div class="about-grid">
             <div class="about-image-frame reveal">
               <img src="hoarrski.jpg" alt="Hoarrski — tattoo artist portrait" />
             </div>
             <div class="about-content panel gold-edge reveal">
-              <p class="about-p">-BLACKWORK-DOTWORK-</p>
-              <blockquote class="about-quote">Find me at @bleksmidjantattoo</blockquote>
-              <p class="about-p">Dm for booking and inquires</p>
-              <p class="about-p">Hoarrski is a blackwork and dotwork tattoo artist based in Reykjavík. The focus is on striking contrast, clean execution, and thoughtful placement that moves with the body. Every piece is designed to heal beautifully and feel timeless years down the line.</p>
-              <p class="about-p">Whether you have a refined idea or just a mood and a reference, I translate concepts into bold, readable designs. For bookings and inquiries, send a DM to <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a> or use the booking form.</p>
+              <p class="about-p" data-i18n="about.tagline">-BLACKWORK-DOTWORK-</p>
+              <blockquote class="about-quote" data-i18n="about.quote">Find me at @bleksmidjantattoo</blockquote>
+              <p class="about-p" data-i18n="about.dm">Dm for booking and inquires</p>
+              <p class="about-p" data-i18n="about.p1">Hoarrski is a blackwork and dotwork tattoo artist based in Reykjavík. The focus is on striking contrast, clean execution, and thoughtful placement that moves with the body. Every piece is designed to heal beautifully and feel timeless years down the line.</p>
+              <p class="about-p" data-i18n="about.p2">Whether you have a refined idea or just a mood and a reference, I translate concepts into bold, readable designs. For bookings and inquiries, send a DM to <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a> or use the booking form.</p>
               <div class="chips">
-                <span class="chip">Blackwork</span>
-                <span class="chip">Dotwork</span>
-                <span class="chip">Custom flash</span>
-                <span class="chip">Linework</span>
-                <span class="chip">Bold & readable</span>
+                <span class="chip" data-i18n="chips.blackwork">Blackwork</span>
+                <span class="chip" data-i18n="chips.dotwork">Dotwork</span>
+                <span class="chip" data-i18n="chips.flash">Custom flash</span>
+                <span class="chip" data-i18n="chips.linework">Linework</span>
+                <span class="chip" data-i18n="chips.readable">Bold & readable</span>
               </div>
               <div class="about-links">
-                <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">Instagram</a>
-                <a class="link" href="#booking">Booking form</a>
+                <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer" data-i18n="about.instagram">Instagram</a>
+                <a class="link" href="#booking" data-i18n="about.bookingLink">Booking form</a>
               </div>
               <div class="social-icons" aria-label="Social links">
                 <a class="icon-link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -133,11 +137,11 @@
       <section id="portfolio" class="section">
         <div class="container">
           <div class="section-head">
-            <h2 class="section-title gothic">Portfolio</h2>
+            <h2 class="section-title gothic" data-i18n="portfolio.title">Portfolio</h2>
             <div class="filters" role="tablist" aria-label="Filter gallery">
-              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-              <button class="filter-btn" data-filter="blackwork" role="tab">Blackwork</button>
-              <button class="filter-btn" data-filter="dotwork" role="tab">Dotwork</button>
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="filters.all">All</button>
+              <button class="filter-btn" data-filter="blackwork" role="tab" data-i18n="filters.blackwork">Blackwork</button>
+              <button class="filter-btn" data-filter="dotwork" role="tab" data-i18n="filters.dotwork">Dotwork</button>
             </div>
           </div>
           <div class="gallery-grid">
@@ -166,37 +170,37 @@
       <!-- Booking -->
       <section id="booking" class="section">
         <div class="container">
-          <h2 class="section-title gothic">Booking</h2>
+          <h2 class="section-title gothic" data-i18n="booking.title">Booking</h2>
           <form id="booking-form" class="form panel" novalidate>
             <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
+              <label for="name" data-i18n="booking.name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required data-i18n="booking.namePh" data-i18n-attr="placeholder" />
             </div>
             <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <label for="email" data-i18n="booking.email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required data-i18n="booking.emailPh" data-i18n-attr="placeholder" />
             </div>
             <div class="form-row">
-              <label for="instagram">Instagram</label>
-              <input id="instagram" name="instagram" type="text" placeholder="@username" />
+              <label for="instagram" data-i18n="booking.instagram">Instagram</label>
+              <input id="instagram" name="instagram" type="text" placeholder="@username" data-i18n="booking.instagramPh" data-i18n-attr="placeholder" />
             </div>
             <div class="form-row">
-              <label for="idea">Idea</label>
-              <textarea id="idea" name="idea" placeholder="Describe your idea" rows="4"></textarea>
+              <label for="idea" data-i18n="booking.idea">Idea</label>
+              <textarea id="idea" name="idea" placeholder="Describe your idea" rows="4" data-i18n="booking.ideaPh" data-i18n-attr="placeholder"></textarea>
             </div>
             <div class="form-row">
-              <label for="placement">Placement</label>
-              <input id="placement" name="placement" type="text" placeholder="Arm, leg, etc." />
+              <label for="placement" data-i18n="booking.placement">Placement</label>
+              <input id="placement" name="placement" type="text" placeholder="Arm, leg, etc." data-i18n="booking.placementPh" data-i18n-attr="placeholder" />
             </div>
             <div class="form-row">
-              <label for="size">Approx. size</label>
-              <input id="size" name="size" type="text" placeholder="e.g., 10 cm" />
+              <label for="size" data-i18n="booking.size">Approx. size</label>
+              <input id="size" name="size" type="text" placeholder="e.g., 10 cm" data-i18n="booking.sizePh" data-i18n-attr="placeholder" />
             </div>
             <div class="form-row">
-              <label for="refs">Reference link (optional)</label>
-              <input id="refs" name="refs" type="url" placeholder="https://..." />
+              <label for="refs" data-i18n="booking.refs">Reference link (optional)</label>
+              <input id="refs" name="refs" type="url" placeholder="https://..." data-i18n="booking.refsPh" data-i18n-attr="placeholder" />
             </div>
-            <button type="submit" class="btn btn-primary">Send inquiry</button>
+            <button type="submit" class="btn btn-primary" data-i18n="booking.submit">Send inquiry</button>
             <div class="form-message" id="formMessage" aria-live="polite"></div>
           </form>
         </div>
@@ -205,19 +209,19 @@
       <!-- FAQ -->
       <section id="faq" class="section">
         <div class="container">
-          <h2 class="section-title gothic">FAQ</h2>
+          <h2 class="section-title gothic" data-i18n="faq.title">FAQ</h2>
           <div class="accordion">
             <details class="reveal">
-              <summary>How do I book?</summary>
-              <p>Use the form above or DM <a href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a>.</p>
+              <summary data-i18n="faq.q1">How do I book?</summary>
+              <p data-i18n="faq.a1">Use the form above or DM <a href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a>.</p>
             </details>
             <details class="reveal">
-              <summary>What styles do you do?</summary>
-              <p>Primarily blackwork and dotwork.</p>
+              <summary data-i18n="faq.q2">What styles do you do?</summary>
+              <p data-i18n="faq.a2">Primarily blackwork and dotwork.</p>
             </details>
             <details class="reveal">
-              <summary>Do you take walk-ins?</summary>
-              <p>Occasionally. DM for availability.</p>
+              <summary data-i18n="faq.q3">Do you take walk-ins?</summary>
+              <p data-i18n="faq.a3">Occasionally. DM for availability.</p>
             </details>
           </div>
         </div>
@@ -226,14 +230,14 @@
       <!-- Location -->
       <section id="location" class="section location">
         <div class="container">
-          <h2 class="section-title gothic">Location</h2>
+          <h2 class="section-title gothic" data-i18n="location.title">Location</h2>
           <div class="location-photo reveal">
             <img src="infront.webp" alt="Exterior view in front of the studio at Kringlan 7, 103 Reykjavík" />
           </div>
           <div class="map-wrapper reveal">
             <iframe title="Map" src="https://www.google.com/maps?q=Kringlan%207%2C%20103%20Reykjav%C3%ADk&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <p class="address">Address: Kringlan 7, 103 Reykjavík</p>
+          <p class="address" data-i18n="location.address">Address: Kringlan 7, 103 Reykjavík</p>
         </div>
       </section>
     </main>
@@ -246,7 +250,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> Hoarrski Tattoo. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">Hoarrski Tattoo. All rights reserved.</span></p>
       </div>
     </footer>
 
