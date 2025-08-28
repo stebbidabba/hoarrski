@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoarrski Tattoo</title>
+    <meta name="description" content="Hoarrski Tattoo — Blackwork & Dotwork. DM @bleksmidjantattoo for bookings and inquiries." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container">
+        <a href="#top" class="logo" aria-label="Hoarrski Tattoo Home">
+          <img src="logo.png" alt="Hoarrski Tattoo logo" class="logo-img" />
+          <span class="gothic" style="font-weight:600; color:#D4AF37;">Hoarrski Tattoo</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="menu" id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-controls="menu" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero">
+        <img class="hero-bg" src="hero.webp" alt="Studio hero background" />
+        <div class="hero-logo">
+          <img src="logo.png" alt="Hoarrski Tattoo" class="hero-logo-img" />
+        </div>
+        <div class="hero-content container">
+          <a class="btn btn-primary" href="#booking">Book now</a>
+          <a class="btn btn-ghost" href="#portfolio">View work</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title gothic">About Hoarrski</h2>
+          <div class="about-grid">
+            <div class="about-image-frame reveal">
+              <img src="hoarrski.jpg" alt="Hoarrski — tattoo artist portrait" />
+            </div>
+            <div class="about-content panel gold-edge reveal">
+              <p class="about-p">-BLACKWORK-DOTWORK-</p>
+              <blockquote class="about-quote">Find me at @bleksmidjantattoo</blockquote>
+              <p class="about-p">Dm for booking and inquires</p>
+              <p class="about-p">Hoarrski is a blackwork and dotwork tattoo artist based in Reykjavík. The focus is on striking contrast, clean execution, and thoughtful placement that moves with the body. Every piece is designed to heal beautifully and feel timeless years down the line.</p>
+              <p class="about-p">Whether you have a refined idea or just a mood and a reference, I translate concepts into bold, readable designs. For bookings and inquiries, send a DM to <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a> or use the booking form.</p>
+              <div class="chips">
+                <span class="chip">Blackwork</span>
+                <span class="chip">Dotwork</span>
+                <span class="chip">Custom flash</span>
+                <span class="chip">Linework</span>
+                <span class="chip">Bold & readable</span>
+              </div>
+              <div class="about-links">
+                <a class="link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">Instagram</a>
+                <a class="link" href="#booking">Booking form</a>
+              </div>
+              <div class="social-icons" aria-label="Social links">
+                <a class="icon-link" href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001A5.5 5.5 0 0 1 12 7.5zm0 2a3.5 3.5 0 1 0 .001 6.999A3.5 3.5 0 0 0 12 9.5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+                </a>
+              </div>
+              <div class="signature">Hoarrski</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title gothic">Portfolio</h2>
+            <div class="filters" role="tablist" aria-label="Filter gallery">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button class="filter-btn" data-filter="blackwork" role="tab">Blackwork</button>
+              <button class="filter-btn" data-filter="dotwork" role="tab">Dotwork</button>
+            </div>
+          </div>
+          <div class="gallery-grid">
+            <a href="Screenshot 2025-08-28 at 11.22.12.png" class="gallery-item reveal" data-label="Blackwork" data-cat="blackwork">
+              <img src="Screenshot 2025-08-28 at 11.22.12.png" alt="Tattoo piece 1" />
+            </a>
+            <a href="Screenshot 2025-08-28 at 11.22.20.png" class="gallery-item reveal" data-label="Dotwork" data-cat="dotwork">
+              <img src="Screenshot 2025-08-28 at 11.22.20.png" alt="Tattoo piece 2" />
+            </a>
+            <a href="Screenshot 2025-08-28 at 11.22.26.png" class="gallery-item reveal" data-label="Blackwork" data-cat="blackwork">
+              <img src="Screenshot 2025-08-28 at 11.22.26.png" alt="Tattoo piece 3" />
+            </a>
+            <a href="Screenshot 2025-08-28 at 11.22.40.png" class="gallery-item reveal" data-label="Dotwork" data-cat="dotwork">
+              <img src="Screenshot 2025-08-28 at 11.22.40.png" alt="Tattoo piece 4" />
+            </a>
+            <a href="Screenshot 2025-08-28 at 11.22.53.png" class="gallery-item reveal" data-label="Blackwork" data-cat="blackwork">
+              <img src="Screenshot 2025-08-28 at 11.22.53.png" alt="Tattoo piece 5" />
+            </a>
+            <a href="Screenshot 2025-08-28 at 11.23.14.png" class="gallery-item reveal" data-label="Dotwork" data-cat="dotwork">
+              <img src="Screenshot 2025-08-28 at 11.23.14.png" alt="Tattoo piece 6" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section id="booking" class="section">
+        <div class="container">
+          <h2 class="section-title gothic">Booking</h2>
+          <form id="booking-form" class="form panel" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="instagram">Instagram</label>
+              <input id="instagram" name="instagram" type="text" placeholder="@username" />
+            </div>
+            <div class="form-row">
+              <label for="idea">Idea</label>
+              <textarea id="idea" name="idea" placeholder="Describe your idea" rows="4"></textarea>
+            </div>
+            <div class="form-row">
+              <label for="placement">Placement</label>
+              <input id="placement" name="placement" type="text" placeholder="Arm, leg, etc." />
+            </div>
+            <div class="form-row">
+              <label for="size">Approx. size</label>
+              <input id="size" name="size" type="text" placeholder="e.g., 10 cm" />
+            </div>
+            <div class="form-row">
+              <label for="refs">Reference link (optional)</label>
+              <input id="refs" name="refs" type="url" placeholder="https://..." />
+            </div>
+            <button type="submit" class="btn btn-primary">Send inquiry</button>
+            <div class="form-message" id="formMessage" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <h2 class="section-title gothic">FAQ</h2>
+          <div class="accordion">
+            <details class="reveal">
+              <summary>How do I book?</summary>
+              <p>Use the form above or DM <a href="https://instagram.com/bleksmidjantattoo" target="_blank" rel="noreferrer">@bleksmidjantattoo</a>.</p>
+            </details>
+            <details class="reveal">
+              <summary>What styles do you do?</summary>
+              <p>Primarily blackwork and dotwork.</p>
+            </details>
+            <details class="reveal">
+              <summary>Do you take walk-ins?</summary>
+              <p>Occasionally. DM for availability.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section id="location" class="section location">
+        <div class="container">
+          <h2 class="section-title gothic">Location</h2>
+          <div class="location-photo reveal">
+            <img src="infront.webp" alt="Exterior view in front of the studio at Kringlan 7, 103 Reykjavík" />
+          </div>
+          <div class="map-wrapper reveal">
+            <iframe title="Map" src="https://www.google.com/maps?q=Kringlan%207%2C%20103%20Reykjav%C3%ADk&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="address">Address: Kringlan 7, 103 Reykjavík</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">Close</button>
+      <img id="lightboxImg" alt="Expanded artwork" />
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Hoarrski Tattoo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
